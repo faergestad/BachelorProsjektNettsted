@@ -19,7 +19,6 @@ function topp() {
     <body>
         <div class='loginContainer'>
             <h1>Please log in</h1>
-            <h1>fuckface..</h1>
             <input type='text' placeholder='Enter Username' name='uname' required size='30'>
             <br>
             <input type='password' placeholder='Enter Password' name='psw' required size='30'>
