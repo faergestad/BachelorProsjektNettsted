@@ -1,0 +1,17 @@
+.loginContainer {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+input {
+	margin: 5px;
+}
+
+button {
+	display:inline-block;
+}
