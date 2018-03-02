@@ -5,7 +5,7 @@
 	if ($_POST['password'] == $_POST['repassword']) {
 		if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['position'])) {
 			$username = $_POST['username'];
-			$password = $db->escape_string(password_hash($_POST['password'], PASSWORD_BCRYPT));
+			$password = $db->escape_string(md5($_POST['password'], PASSWORD_BCRYPT));
                         $hash = $db->escape_string( md5( rand(0,1000) ) );
 			$position = $_POST['position'];
 
@@ -20,4 +20,4 @@
 	} else {
 		echo "The passwords do not match!";
 	}
-?>
+?> 
