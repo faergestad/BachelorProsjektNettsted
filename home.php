@@ -11,10 +11,18 @@ session_start();
     <meta name='beskrivelse' content='BackEnd system'>
     <meta name='forfatter' content='Georg Persen'>
     <meta name='Bachelorprosjekt' content='hjemmeside'>
-    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/bachelorprosjekt/BachelorProsjektNettsted/css/bootstrap.min.css">
+    
+    
 </head>
 <body>
-	<div class='loginContainer'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="/bachelorprosjekt/BachelorProsjektNettsted/js"></script>
+	<div class='container'>
+            <div class="row">
+            <div class='center-block'>
         <h1>Please log in</h1>
         <form action="login.php" method="POST">
         	<input type='text' placeholder='Enter Username' name='username' required size='30'>
@@ -27,6 +35,8 @@ session_start();
         <form action="register.php">
             <button type="submit">Register</button>
         </form>
+        </div>
+                </div>
     </div>
 </body>
 </html>
