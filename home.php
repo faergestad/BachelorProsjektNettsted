@@ -17,6 +17,23 @@
         <div class="jumbotron text-center">
   <h1>Bachelor GAKK</h1>
   <p>Georg F. Persen, Kim Allergodt, Kjetil Skårdal, Andreas Leite</p> 
+
+    
+  
+  <!-- Links -->
+   
+  <nav class="navbar-expand-sm">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" href="home.php">Hjem</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="ansatt.php">Ansatt</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Oppdrag</a>
+    </li>
+  </ul>
 </div>
 
 <div class="container">
