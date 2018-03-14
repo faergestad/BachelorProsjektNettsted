@@ -1,123 +1,7 @@
-<?php
-	include('session.php');
-        ?>
-
-<html><!DOCTYPE html>
-<html>
-    <head>
-<title>Bachelor Prosjekt</title>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-
-<body>
-       <div class="jumbotron text-center">
-  <h1>Bachelor GAKK</h1>
-  <p>Georg F. Persen, Kim Allergodt, Kjetil Skårdal, Andreas Leite</p> 
-
-    
-  
-  <!-- Links -->
-   
-  <nav class="navbar-expand-sm">
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link" href="home.php">Hjem</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="ansatt.php">Ansatt</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Oppdrag</a>
-    </li>
-  </ul>
-</div>
-<div class="container section-ansatt">
-	<div class="row">
-		<div class="col-md-12 col-sm-12 col-xs-12 ansatt-hedding text-center">
-			<h1>Ansatte</h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 col-sm-4 col-xs-12">
-			<div class="row section-success ansatt-box text-center">
-				<div class="col-md-12 section1">
-					<img src="">
-				</div>
-				<div class="col-md-12 section2">
-					<p>GEORG FAERGESTAD</p><br>
-					<h1>MASTER</h1><br>
-				</div>
-				<div class="col-md-12 section3">
-					<p>
-						Master of doom
-						Flink i det meste.
-					</p>
-				</div>
-				<div class="col-md-12 section4">
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12">
-			<div class="row section-info ansatt-box text-center">
-				<div class="col-md-12 section1">
-					<img src="">
-				</div>
-				<div class="col-md-12 section2">
-					<p>KIM ALLERGODT</p><br>
-					<h1>APPUTVIKLER</h1><br>
-				</div>
-				<div class="col-md-12 section3">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-					</p>
-				</div>
-				<div class="col-md-12 section4">
-					<i class="fa fa-facebook-official" aria-hidden="true"></i>
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<i class="fa fa-google-plus" aria-hidden="true"></i>
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12">
-			<div class="row section-danger ansatt-box text-center">
-				<div class="col-md-12 section1">
-					<img src="">
-				</div>
-				<div class="col-md-12 section2">
-					<p>ANDREAS LEITE</p><br>
-					<h1>WEBDESIGNER</h1>
-				</div>
-				<div class="col-md-12 section3">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-					</p>
-				</div>
-				<div class="col-md-12 section4">
-					<i class="fa fa-facebook-official" aria-hidden="true"></i>
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<i class="fa fa-google-plus" aria-hidden="true"></i>
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
-</html>
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bachelor GAKK</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -156,20 +40,21 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="home.php">Logo</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-          <li class="active"><a href="home.php">Hjem</a></li>
-        <li><a href="ansatt.php">Ansatt</a></li>
-        <li><a href="oppdrag.php">Oppdrag</a></li>
-        <li><a href="#">Historikk</a></li>
-      </ul>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.php">Hjem</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Registrer
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="oppdrag.php">Oppdrag</a></li>
+          <li><a href="ansatt.php">Ansatt</a></li>
+          <li><a href="kunde.php">Kunde</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Historikk</a></li>
+    </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
@@ -180,14 +65,34 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Top</a></p>
+   
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Velkommen til GAKK Bachelorprosjekt</h1>
-      <p>For å gjøre shit, naviger deg til ønsket side. </p>
+      <h1>Registrer ansatt</h1>
+      <p>Fyll ut skjema for å registrere en ansatt</p>
       <hr>
-      <h3>Oppdrag Mars 2018</h3>
-      <p>Ferdigstille alpha versjon av system</p>
+<form action="/lag_oppdrag.php" id="oppdragform">
+      <div class="form-group">
+    <label for="text">Fornavn:</label>
+    <input type="text" class="form-control" id="fornavn">
+  </div>
+     <div class="form-group">
+    <label for="text">Etternavn</label>
+    <input type="text" class="form-control" id="etternavn">
+  </div>
+    
+  <div class="form-group">
+    <label for="text">Email:</label>
+    <input type="text" class="form-control" id="email">
+  </div>
+     <div class="form-group">
+    <label for="text">Arbeidstittel:</label>
+    <input type="text" class="form-control" id="arbeidstittel">
+  </div>
+
+
+  <button type="submit" class="btn btn-default">Registrer</button>
+</form>
     </div>
     
   </div>

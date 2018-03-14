@@ -53,6 +53,7 @@
           <li><a href="kunde.php">Kunde</a></li>
         </ul>
       </li>
+      <li><a href="oppdrag">Oppdrag</a></li>
       <li><a href="#">Historikk</a></li>
     </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -68,47 +69,26 @@
    
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Oppretting av oppdrag</h1>
-      <p>Fyll ut skjema for å opprette oppdrag.</p>
+      <h1>Registrer kunde</h1>
+      <p>Fyll ut skjema for å registrere en ny kunde</p>
       <hr>
 <form action="/lag_oppdrag.php" id="oppdragform">
       <div class="form-group">
-    <label for="text">Oppdragsgiver:</label>
-    <input type="text" class="form-control" id="oppdragsgiver">
-  </div>
-   <div class="form-group">
-    <select name="tjenester" form="oppdragform">
-    <option value="1">Konsulenttjenester</option>
-    <option value="2">Prosjekt</option>
-    <option value="3">Leie av konsulent</option>
-    <option value="4">Kantinepersonale</option>
-    <option value="5">Vaktmester</option>
-    <option value="6">Systemadministrasjon</option>
-    <option value="7">Vedlikehold av nettverk</option>
-    <option value="8">Oppsett av nettverk</option>
-    <option value="9">Tømrerarbeid</option>
-  </select>
+    <label for="text">Kunde:</label>
+    <input type="text" class="form-control" id="kunde">
   </div>
      <div class="form-group">
-    <label for="text">Oppdragsbeskrivelse</label>
-    <input type="text" class="form-control" id="beskrivelse">
+    <label for="text">Email:</label>
+    <input type="text" class="form-control" id="email">
   </div>
     
   <div class="form-group">
-    <label for="text">Addresse</label>
+    <label for="text">Addresse:</label>
     <input type="text" class="form-control" id="addresse">
   </div>
-     <div class="form-group">
-    <label for="text">Oppdrag start</label>
-    <input type="text" class="form-control" id="start">
-  </div>
-     <div class="form-group">
-    <label for="text">Oppdrag slutt</label>
-    <input type="text" class="form-control" id="slutt">
-  </div>
 
 
-  <button type="submit" class="btn btn-default">Lag oppdrag</button>
+  <button type="submit" class="btn btn-default">Registrer</button>
 </form>
     </div>
     
